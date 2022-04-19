@@ -4,8 +4,8 @@ import React from "react";
 
 function App() {
   const [quote, setQuote] = React.useState([]);
-  const [count1, setCount1] = React.useState(0);
-  const [count2, setCount2] = React.useState(1);
+  const [count1, setCount1] = React.useState(1);
+  const [count2, setCount2] = React.useState(2);
   React.useEffect(() => {
     async function fetchAPI() {
       const resp = await fetch("https://type.fit/api/quotes").then((data) => {
@@ -19,8 +19,8 @@ function App() {
   return (
     <div className="App">
       <ul>
-        {quote.slice(count1, count2).map((data, i) => (
-          <li key={i}>
+        {quote.slice(count1, count2).map((data, index) => (
+          <li key={index}>
             <p>{data.text}</p>
             <p>{data.author}</p>
           </li>
@@ -29,10 +29,9 @@ function App() {
 
       <button
         onClick={() => {
-          console.log(count1);
-          if (count1 == 0) {
-            setCount1(quote.length);
-            setCount2(quote.length + 1);
+          if (count1 === 1) {
+            setCount1(quote.length - 1);
+            setCount2(quote.length);
           } else {
             setCount1(count1 - 1);
             setCount2(count2 - 1);
@@ -44,7 +43,7 @@ function App() {
       <button
         onClick={() => {
           console.log(count1);
-          if (count1 == quote.length) {
+          if (count1 === quote.length - 1) {
             setCount1(0);
             setCount2(1);
           } else {
