@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
 
@@ -58,6 +57,9 @@ function App() {
           next
         </button>
       </nav>
+      <p>
+        Made by <a href="https://github.com/Andrian-W">Andrian-W</a>
+      </p>
     </div>
   );
 }

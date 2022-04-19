@@ -2,12 +2,17 @@ body {
   background-color: #261C2C;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .App {
   border-radius: 20px;
   display: inline-flex;
   align-items: center;
   width: 40%;
-  max-height: 200px;
+  max-height: 250px;
   justify-content: center;
   flex-direction: column;
   text-align: center;
@@ -70,7 +75,7 @@ nav button {
   background-color: #261C2C;
   color: white;
   border: none;
-  margin: 10px;
+  margin: 5px;
   padding: 15px;
   border-radius: 20px;
 }/*# sourceMappingURL=App.css.map */

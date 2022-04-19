@@ -6,13 +6,18 @@ $textAuthor:#6E85B2;
 body{
     background-color: $background;
 }
+a{
+    color: inherit;
+    text-decoration: none;
+}
 
 .App{
+
     border-radius: 20px;
     display: inline-flex;
     align-items: center;
     width: 40%;
-    max-height: 200px;
+    max-height: 250px;
     justify-content: center;
     flex-direction: column;
     text-align: center;
@@ -69,7 +74,7 @@ nav{
         background-color: $background;
         color: white;
         border: none;
-        margin: 10px;
+        margin: 5px;
         padding: 15px;
         border-radius: 20px;
     }
