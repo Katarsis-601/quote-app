@@ -1,0 +1,76 @@
+body {
+  background-color: #261C2C;
+}
+
+.App {
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  width: 40%;
+  max-height: 200px;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #3E2C41;
+  padding: 20px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content ul {
+  padding-left: 0;
+  margin: 20px;
+}
+.content li {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px;
+  padding: 20px;
+  border-radius: 20px;
+  transition: 2s;
+  background-color: #261C2C;
+  margin: 10px;
+  list-style: none;
+}
+.content p {
+  -webkit-animation-name: opacityAnimation;
+          animation-name: opacityAnimation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+.content .quote {
+  color: #5C527F;
+  font-weight: bold;
+}
+.content .author {
+  font-weight: lighter;
+  color: #6E85B2;
+}
+@-webkit-keyframes opacityAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacityAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+nav button {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px;
+  cursor: pointer;
+  background-color: #261C2C;
+  color: white;
+  border: none;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 20px;
+}/*# sourceMappingURL=App.css.map */

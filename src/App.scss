@@ -1,0 +1,76 @@
+$background:#261C2C;
+$container: #3E2C41;
+$textQuote: #5C527F;
+$textAuthor:#6E85B2;
+
+body{
+    background-color: $background;
+}
+
+.App{
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    width: 40%;
+    max-height: 200px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: $container;
+    padding: 20px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.content{
+
+    ul{
+        padding-left: 0;
+        margin: 20px;
+    }
+    li {
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px ;
+        padding: 20px;
+        border-radius: 20px;
+        transition: 2s;
+        background-color: $background;
+        margin: 10px;
+        list-style: none;
+    }
+    p{
+        animation-name: opacityAnimation;
+        animation-duration: 2s;
+    }
+
+
+    .quote{
+        color: $textQuote;font-weight: bold;
+    }
+    .author {font-weight: lighter;
+        color: $textAuthor;
+    }
+    @keyframes opacityAnimation {
+        0%{
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+nav{
+    button{
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px;
+        cursor: pointer;
+        background-color: $background;
+        color: white;
+        border: none;
+        margin: 10px;
+        padding: 15px;
+        border-radius: 20px;
+    }
+}
